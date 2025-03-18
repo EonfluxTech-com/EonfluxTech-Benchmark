@@ -1,0 +1,17 @@
+[package]
+name = "eonflux_benchmark"
+version = "0.1.0"
+edition = "2021"
+authors = ["EonfluxTech"]
+description = "A Windows-specific system benchmark and hardware information tool"
+
+[dependencies]
+sysinfo = "0.29.10"        # For system information
+winapi = { version = "0.3.9", features = ["winnt", "sysinfoapi", "processthreadsapi", "psapi", "handleapi", "winerror"] }
+colored = "2.0.4"          # For colorful terminal output
+indicatif = "0.17.7"       # For progress bars
+crossterm = "0.27.0"       # For terminal manipulation
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"         # For JSON export
+chrono = "0.4"             # For timestamps
+rand = "0.8.5"             # For random data generation in benchmarks 

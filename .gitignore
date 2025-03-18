@@ -1,0 +1,33 @@
+# Rust build directory
+/target/
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
+.vs/
+
+# Debug files
+**/*.rs.bk
+*.pdb
+
+# Windows specific
+*.exe
+*.dll
+*.lib
+*.exp
+
+# Backup files
+*~
+*.bak
+
+# Environment files
+.env
+.env.local
+
+# Generated documentation
+/doc/
+/docs/
+
+# Cargo lock file (uncomment if this is an executable project)
+# Cargo.lock 
